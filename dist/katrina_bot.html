@@ -15,112 +15,170 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap" rel="stylesheet">
     <!-- END OF CSS FILES -->
-  </head>
+    <style>
+      header {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        backdrop-filter: blur(0);
+      }
 
+      header a,
+      header button {
+        color: black;
+      }
+
+      .scrolled {
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.7px);
+        -webkit-backdrop-filter: blur(4.7px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: background 1s ease;
+      }
+
+      header.scrolled a,
+      header.scrolled .drop {
+        color: black;
+      }
+    </style>
+
+    <!-- END OF CSS FILES -->
+  </head>
   <body>
-    <section class="section-dreamacademy">
-      <!-- START OF HEADER -->
-      <header>
-        <nav class="container-local py-2">
+    <!-- START OF HEADER -->
+    <header id="header">
+      <nav class="container-local py-2">
+        <div
+          class="items-center justify-end hidden w-full mt-4 gap-2 md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <button
+            class="green-button text-white text-xs py-1 px-3 rounded-full"
+          >
+            JOIN US
+          </button>
+          <button
+            class="black-button hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full"
+          >
+            DONATE
+          </button>
+        </div>
+        <div class="flex items-start justify-between mx-auto">
           <div
-            class="items-center small-font justify-end hidden w-full gap-2 md:flex md:w-auto md:order-1"
+            class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <button
-              class="green-button hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full"
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
             >
-              JOIN US
-            </button>
-            <button
-              class="black-button hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full"
-            >
-              DONATE
-            </button>
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 pl-3 pr-4 rounded text-sm hover:bg-gray-100 md:hover:bg-transparent"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./aboutUs.html"
+                  class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../dist/dreamacademy.html"
+                  class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                  >Dream Academy</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="flex flex-wrap items-center justify-between mx-auto">
-            <div
-              class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
-            >
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="dreamacademy.html"
-                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
-                    >Dream Academy</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div
-              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 pl-5"
-              id="navbar-sticky"
-            >
-              <a href="https://flowbite.com/" class="flex items-center">
-                <img
-                  src="../resources/header/HYT Logo.png"
-                  class="h-25 mr-3"
-                  alt="Flowbite Logo"
-                />
-              </a>
-            </div>
-            <div
-              class="items-center small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
-            >
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
-                    >Culture</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
-                    >The Team</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
-                    >Our Thrust</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 logo"
+            id="navbar-sticky"
+          >
+            <a href="./index.html" class="flex items-center">
+              <img
+                src="../resources/header/HYT Logo.png"
+                class="mr-3"
+                alt="Flowbite Logo"
+              />
+            </a>
           </div>
-        </nav>
-      </header>
-      <!-- END OF HEADER -->
+          <div
+            class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="../ourthrust.html"
+                  class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                  >Culture</a
+                >
+              </li>
+              <li>
+                <button
+                  data-dropdown-toggle="dropdown"
+                  class="block py-2 pl-3 pr-4 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+                >
+                  The Team
+                </button>
+                <div
+                  class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                  id="dropdown"
+                >
+                  <ul class="py-1" aria-labelledby="dropdown">
+                    <li>
+                      <a
+                        href="../dist/boardoftrustees.html"
+                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                        >Board of Trustees</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../coreleaders.html"
+                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                        >Core Leaders</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="../ourthrust.html"
+                  class="block py-2 pl-3 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+                >
+                  Our Thrust
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END OF HEADER -->
+
+    <div class="background" style="width: 100vw; height: 150%"></div>
+    <img
+      style="
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      "
+      src="../resources/index/Group 192.png"
+      alt=""
+    />
 
       <!-- START OF MS. HEDDY PAGE -->
 
